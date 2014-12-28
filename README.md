@@ -9,7 +9,7 @@ Each of the following commands use "hadoop11" as the container name or hostname
 
 install lxc
 
-    apt-get install lxc
+    sudo apt-get install lxc
 
 create a container - takes a few minutes on the first run
 
