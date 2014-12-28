@@ -11,7 +11,7 @@ install lxc
 
     apt-get install lxc
 
-create a container
+create a container - takes a few minutes on the first run
 
     sudo lxc-create -t ubuntu -n hadoop11
 
@@ -27,7 +27,7 @@ inspect one of the containers deeper
 
     sudo lxc-info -n hadoop11
   
-enter the console of the container
+enter the console of the container - like ssh into the box
 
     sudo lxc-attach -n hadoop11
 
@@ -38,3 +38,7 @@ stop a container
 destory a container
 
     sudo lxc-destroy -n hadoop11
+
+clone a container - create a new container hadoop12 from the existing hadoop11
+
+    sudo lxc-clone -o hadoop11 -n hadoop12
