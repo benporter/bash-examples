@@ -3,6 +3,13 @@ bash-examples
 
 My notes on easy to forget bash 
 
+
+Basics
+
+recursively change the permissions of a folder called lxc: owner/group/everyone read(4)/write(2)/execute(1)
+
+    sudo chmod -R 744 lxc
+
 Linux Containers (lxc)
 
 Each of the following commands use "hadoop11" as the container name or hostname
