@@ -25,7 +25,7 @@ list containers and their status
 
 inspect one of the containers deeper
 
-    sudo lxc-info -name hadoop11
+    sudo lxc-info -n hadoop11
   
 enter the console of the container
 
