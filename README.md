@@ -42,3 +42,9 @@ destory a container
 clone a container - create a new container hadoop12 from the existing hadoop11
 
     sudo lxc-clone -o hadoop11 -n hadoop12
+    
+lxc networking - delete the dhcp assigned ip addresses (all containers must be stopped)
+
+    sudo service lxc-net stop
+    sudo rm /var/lib/misc/dnsmasq.lxcbr0.leases 
+    sudo service lxc-net start
