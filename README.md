@@ -45,16 +45,26 @@ version and codename of your OS
 
 R - Statistical Programming
 
+install R - installs R and says yes when prompted for whether you to want to download it
+
+    sudo apt-get install -y r-base r-base-dev
+
+add cran mirror:  assumes you want the revolution analytics mirror and are running the trusty flavor of linux
+
+    echo "deb http://cran.revolutionanalytics.com/bin/linux/ubuntu trusty/" | sudo tee -a /etc/apt/sources.list
+    gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9
+    gpg -a --export E084DAB9 | sudo apt-key add -
+
 install an r package:  installs the sqldf package
 
     sudo apt-get update
     sudo apt-get install r-cran-sqldf
 
-install R - installs R and says yes when prompted for whether you to want to download it
+install RStudio Server - port 8787, download the appropriate file for your machine first from:  <a href="http://www.rstudio.com/products/rstudio/download-server/">http://www.rstudio.com/products/rstudio/download-server/</a>
 
-    sudo apt-get install -y r-base r-base-dev
-
-TBD - install RStudio
+    sudo apt-get install gdebi-core
+    sudo apt-get install libapparmor1 # Required only for Ubuntu, not Debian
+    gdebi rstudio-server-0.98.1091-amd64.deb
 
 Linux Containers (lxc)
 
