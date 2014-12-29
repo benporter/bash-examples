@@ -34,6 +34,11 @@ add a user - add a new user
 
     sudo adduser khaldrogo
 
+version and codename of your OS 
+
+    lsb_release -a
+
+
 R - Statistical Programming
 
 install an r package:  installs the sqldf package
@@ -41,7 +46,9 @@ install an r package:  installs the sqldf package
     sudo apt-get update
     sudo apt-get install r-cran-sqldf
 
-TBD - install R
+install R - installs R and says yes when prompted for whether you to want to download it
+
+    sudo apt-get install -y r-base r-base-dev
 
 TBD - install RStudio
 
