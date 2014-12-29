@@ -18,6 +18,13 @@ renew your ip address
 
     sudo dhclient
 
+find a process - use this to find the PID (process id number) used in kill command
+
+    top
+
+stop a process - assuming it's PID is 1234
+
+    kill -9 1234
 
 Linux Containers (lxc)
 
