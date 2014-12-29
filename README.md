@@ -34,6 +34,10 @@ add a user - add a new user
 
     sudo adduser khaldrogo
 
+switch users
+
+    sudo su - khaldrago
+
 change password
 
     sudo passwd khaldrogo
