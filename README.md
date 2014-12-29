@@ -34,6 +34,10 @@ add a user - add a new user
 
     sudo adduser khaldrogo
 
+change password
+
+    sudo passwd khaldrogo
+
 version and codename of your OS 
 
     lsb_release -a
