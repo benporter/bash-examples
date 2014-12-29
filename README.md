@@ -10,6 +10,15 @@ recursively change the permissions of a folder called lxc: owner/group/everyone 
 
     sudo chmod -R 744 lxc
 
+release your ip address
+
+    sudo dhclient -r
+
+renew your ip address
+
+    sudo dhclient
+
+
 Linux Containers (lxc)
 
 Each of the following commands use "hadoop11" as the container name or hostname
