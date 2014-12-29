@@ -60,7 +60,7 @@ install R - installs R and says yes when prompted for whether you to want to dow
 
     sudo apt-get install -y r-base r-base-dev
 
-add cran mirror:  assumes you want the revolution analytics mirror and are running the trusty flavor of linux
+add cran mirror:  assumes you want the revolution analytics mirror and are running the trusty flavor of linux.  the "tee" part prints the result to the console and appends (the -a option) to sources.list.
 
     echo "deb http://cran.revolutionanalytics.com/bin/linux/ubuntu trusty/" | sudo tee -a /etc/apt/sources.list
     gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E084DAB9
