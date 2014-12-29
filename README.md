@@ -42,6 +42,9 @@ version and codename of your OS
 
     lsb_release -a
 
+untar and unzip a file
+
+    tar -xzf hadoop-2.6.0.tar.gz
 
 R - Statistical Programming
 
