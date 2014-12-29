@@ -18,6 +18,10 @@ renew your ip address
 
     sudo dhclient
 
+print the directories in your path, replacing colons with new line characters and sorted.  edit ~/.bashrc or .profile to add new path search directories
+
+    echo $PATH | tr : '\n' | sort
+
 find a process - use this to find the PID (process id number) used in kill command
 
     top
