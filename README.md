@@ -122,3 +122,7 @@ lxc networking - delete the dhcp assigned ip addresses (all containers must be s
     sudo service lxc-net stop
     sudo rm /var/lib/misc/dnsmasq.lxcbr0.leases 
     sudo service lxc-net start
+
+installing the <a href="http://lxc-webpanel.github.io/index.html">LXC Web Panel</a> for GUI admin of the containers.  accessible via localhost:5000, default username and password of admin/admin.
+
+    wget http://lxc-webpanel.github.io/tools/update.sh -O - | bash
