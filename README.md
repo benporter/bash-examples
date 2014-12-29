@@ -26,6 +26,10 @@ stop a process - assuming it's PID is 1234
 
     kill -9 1234
 
+ssh into a box using a key:  assuming you are in the same directory as your key (.pem) and your username is ubuntu on a AWS instance
+
+    ssh -i mykey.pem ubuntu@ec2-###-###-###-###.compute-1.amazonaws.com
+
 R - Statistical Programming
 
 install an r package:  installs the sqldf package
