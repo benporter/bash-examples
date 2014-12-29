@@ -30,6 +30,10 @@ ssh into a box using a key:  assuming you are in the same directory as your key 
 
     ssh -i mykey.pem ubuntu@ec2-###-###-###-###.compute-1.amazonaws.com
 
+add a user - add a new user
+
+    sudo adduser khaldrogo
+
 R - Statistical Programming
 
 install an r package:  installs the sqldf package
