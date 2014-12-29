@@ -26,6 +26,17 @@ stop a process - assuming it's PID is 1234
 
     kill -9 1234
 
+R - Statistical Programming
+
+install an r package:  installs the sqldf package
+
+    sudo apt-get update
+    sudo apt-get install r-cran-sqldf
+
+TBD - install R
+
+TBD - install RStudio
+
 Linux Containers (lxc)
 
 Each of the following commands use "hadoop11" as the container name or hostname
