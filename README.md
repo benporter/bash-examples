@@ -37,6 +37,10 @@ ssh into a box using a key:  assuming you are in the same directory as your key 
 add a user - add a new user
 
     sudo adduser khaldrogo
+    
+add a user to the sudo list
+
+    sudo adduser khaldrogo sudo
 
 switch users
 
