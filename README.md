@@ -64,6 +64,20 @@ install R - installs R and says yes when prompted for whether you to want to dow
 
     sudo apt-get install -y r-base r-base-dev
 
+install <a href="#http://mran.revolutionanalytics.com/documents/rro/installation/#revorinst-lin">Revolution R Open</a> instead
+
+    sudo apt-get update
+    sudo dpkg -l make gcc gfortran g++ # to see if you need to do the next 4
+    sudo apt-get install make -y
+    sudo apt-get install gcc -y
+    sudo apt-get install gfortran -y
+    sudo apt-get install g++ -y
+    
+    wget http://mran.revolutionanalytics.com/install/RRO-8.0.1-Beta3-Ubuntu-14.04.x86_64.tar.gz
+    tar -xzf RRO-8.0.1-Beta3-Ubuntu-14.04.x86_64.tar.gz
+    sudo ./install.sh
+
+
 add cran mirror:  assumes you want the revolution analytics mirror and are running the trusty flavor of linux.  the "tee" part prints the result to the console and appends (the -a option) to sources.list.
 
     echo "deb http://cran.revolutionanalytics.com/bin/linux/ubuntu trusty/" | sudo tee -a /etc/apt/sources.list
