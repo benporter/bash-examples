@@ -6,6 +6,10 @@ My notes on easy to forget bash
 
 Basics
 
+make a file executeable
+
+    sudo chmod +x myfilename
+
 recursively change the permissions of a folder called lxc: owner/group/everyone read(4)/write(2)/execute(1)
 
     sudo chmod -R 744 lxc
