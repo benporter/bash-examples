@@ -23,6 +23,7 @@ renew your ip address
     sudo dhclient
 
 print all of the processes that are attached to a port
+
     sudo netstat -nlp
 
 print the directories in your path, replacing colons with new line characters and sorted.  edit ~/.bashrc or .profile to add new path search directories
