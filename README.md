@@ -38,7 +38,7 @@ stop a process - assuming it's PID is 1234
 
     kill -9 1234
 
-an enhanced version of top, but you can click to sort by columns and kill a process without leaving htop.  it requires separate installation though.
+<a href="http://hisham.hm/htop/index.php?page=comparison">an enhanced version of top</a>, but you can click to sort by columns and kill a process without leaving htop.  it requires separate installation though.
 
     sudo apt-get install htop
     htop
