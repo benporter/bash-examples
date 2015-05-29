@@ -38,6 +38,11 @@ stop a process - assuming it's PID is 1234
 
     kill -9 1234
 
+an enhanced version of top, but you can click to sort by columns and kill a process without leaving htop.  it requires separate installation though.
+
+    sudo apt-get install htop
+    htop
+
 ssh into a box using a key:  assuming you are in the same directory as your key (.pem) and your username is ubuntu on a AWS instance
 
     ssh -i mykey.pem ubuntu@ec2-###-###-###-###.compute-1.amazonaws.com
