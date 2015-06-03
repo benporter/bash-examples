@@ -157,3 +157,18 @@ lxc networking - delete the dhcp assigned ip addresses (all containers must be s
 installing the <a href="http://lxc-webpanel.github.io/index.html">LXC Web Panel</a> for GUI admin of the containers.  accessible via localhost:5000, default username and password of admin/admin.
 
     wget http://lxc-webpanel.github.io/tools/update.sh -O - | bash
+    
+Vagrant
+
+start a vagrant VM, first navigate to the directory where the VAGRANT file is located
+
+    cd ~/Documents/edx/spark/mooc-setup-master
+    vagrant up
+    
+shut down a vagrant VM
+
+    vagrant halt
+    
+delete the vagrant VM
+
+    vagrant destory
