@@ -172,3 +172,8 @@ shut down a vagrant VM
 delete the vagrant VM
 
     vagrant destory
+    
+share files between the VM and the host.  move the files on the VM to /vagrant and the files will be in the same folder as the Vagrantfile on the host
+
+    cp /myfolder/filesToShare /vagrant
+
