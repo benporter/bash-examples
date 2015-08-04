@@ -71,6 +71,10 @@ untar and unzip a file
 
     tar -xzf hadoop-2.6.0.tar.gz
 
+search for a file (dot searches from the current folder, recursively.  -iname rather than just -name makes it case insensitive)
+
+    find . -iname "myfilename.txt"
+
 R - Statistical Programming
 
 install R - installs R and says yes when prompted for whether you to want to download it
