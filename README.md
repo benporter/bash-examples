@@ -75,6 +75,11 @@ search for a file (dot searches from the current folder, recursively.  -iname ra
 
     find . -iname "myfilename.txt"
 
+Mounting a Network Drive
+
+    sudo mount -t cifs //192.168.1.1/USB_Storage /mnt/usb125MB -o guest
+
+
 R - Statistical Programming
 
 install R - installs R and says yes when prompted for whether you to want to download it
