@@ -77,6 +77,8 @@ search for a file (dot searches from the current folder, recursively.  -iname ra
 
 Mounting a Network Drive
 
+    sudo apt-get install cifs-utils
+    mkdir /mnt/usb125MB
     sudo mount -t cifs //192.168.1.1/USB_Storage /mnt/usb125MB -o guest
 
 
