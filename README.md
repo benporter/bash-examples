@@ -75,6 +75,10 @@ search for a file (dot searches from the current folder, recursively.  -iname ra
 
     find . -iname "myfilename.txt"
 
+disk usage:  -h for human readable, and the next argument is the mount point to analyze
+
+    df -h /
+
 Mounting a Network Drive
 
     sudo apt-get install cifs-utils
