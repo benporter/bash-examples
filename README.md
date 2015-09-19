@@ -34,9 +34,17 @@ find a process - use this to find the PID (process id number) used in kill comma
 
     top
 
+find all processes for a program, e.g. all instances of google chrome
+
+    pgrep chrome
+
 stop a process - assuming it's PID is 1234
 
     kill -9 1234
+
+kill all instances of a program
+
+    pkill chrome
 
 <a href="http://hisham.hm/htop/index.php?page=comparison">an enhanced version of top</a>, but you can click to sort by columns and kill a process without leaving htop.  it requires separate installation though.
 
