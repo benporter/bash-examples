@@ -137,6 +137,11 @@ Each of the following commands use "hadoop11" as the container name or hostname
 
 For Fedora 22, see <a href="http://www.kianmeng.org/2015/05/linux-containers-lxc-in-fedora-22.html">this link</a> for networking bridge workarounds.
 
+Config file location
+
+    /var/lib/lxc/<container name>/config
+    /var/lib/lxc/hadoop11/config
+
 install lxc
 
     sudo apt-get install lxc
