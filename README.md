@@ -188,6 +188,15 @@ installing the <a href="http://lxc-webpanel.github.io/index.html">LXC Web Panel<
 
     wget http://lxc-webpanel.github.io/tools/update.sh -O - | bash
     
+share a folder between the host and a container.  first create /mnt/share within the container and exit the container.  then edit the containers config file, and add a mount point where both folders are relative to the host. this example links the hosts Downloads folder to /mnt/share in the container.
+
+    cd mnt
+    mkdir share
+    exit
+    sudo gedit /var/lib/lxc/hadoop11/config
+    add this line:  lxc.mount.entry = /home/ben/Downloads /var/lib/lxc/hadoop11/rootfs/mnt/share none bind 0 0
+
+
 Vagrant
 
 start a vagrant VM, first navigate to the directory where the VAGRANT file is located
