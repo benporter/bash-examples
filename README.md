@@ -93,6 +93,9 @@ Mounting a Network Drive
     mkdir /mnt/usb125MB
     sudo mount -t cifs //192.168.1.1/USB_Storage /mnt/usb125MB -o guest
 
+Format a usb drive (assumed to be sdc) to FAT32.
+
+    sudo mkfs.vfat -I -F 32 /dev/sdc
 
 R - Statistical Programming
 
