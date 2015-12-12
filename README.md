@@ -97,6 +97,14 @@ Format a usb drive (assumed to be sdc) to FAT32.
 
     sudo mkfs.vfat -I -F 32 /dev/sdc
 
+Backup to AWS Glacier - assumes AWS CLI is install and "aws configure" has been run
+
+    #tar and zip all of the files in the directory to backup
+    tar -zcvf 2015-12-11-backup.tar.gz /home/ben/Pictures/Phone/*
+    #upload files to glacier, in the vaut named my-vault
+    aws glacier upload-archive --account-id - --vault-name my-vault --body 2015-12-11-backup.tar.gz
+
+
 R - Statistical Programming
 
 install R - installs R and says yes when prompted for whether you to want to download it
