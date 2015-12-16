@@ -75,6 +75,10 @@ version and codename of your OS
 
     lsb_release -a
 
+count the number of files in the current directory.  note:  this is the #1, not letter l in the ls command
+
+    ls -1 | wc -l
+
 untar and unzip a file
 
     tar -xzf hadoop-2.6.0.tar.gz
