@@ -97,6 +97,11 @@ Mounting a Network Drive
     mkdir /mnt/usb125MB
     sudo mount -t cifs //192.168.1.1/USB_Storage /mnt/usb125MB -o guest
 
+Find the name of the usb by running this, then plugging in the usb, and running it again.  This one is called  <i>sdc</i>.
+
+    dmesg | tail
+    <sample output>[63089.935649] sd 8:0:0:0: [sdc] Attached SCSI removable disk
+
 Format a usb drive (assumed to be sdc) to FAT32.
 
     sudo mkfs.vfat -I -F 32 /dev/sdc
