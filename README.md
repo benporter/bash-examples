@@ -63,6 +63,18 @@ add a user to the sudo list
 
     sudo adduser khaldrogo sudo
 
+add a user to the sudo list (alternate method)
+
+    # switch to root 
+    su -
+    # install sudo if necessary
+    apt-get install sudo
+    #edit the sudoers file with this, and not another editors
+    visudo
+    #add this line below the similiar root line
+    root	ALL=(ALL:ALL) ALL
+    khaldrago	ALL=(ALL:ALL) ALL
+
 switch users
 
     sudo su - khaldrago
