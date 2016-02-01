@@ -55,6 +55,14 @@ ssh into a box using a key:  assuming you are in the same directory as your key 
 
     ssh -i mykey.pem ubuntu@ec2-###-###-###-###.compute-1.amazonaws.com
 
+copy all *.mp4 files from local to remote
+
+    scp /home/user/videos/*.mp4 remoteusername@192.168.1.1:/server/remote/folder/videos
+
+copy from remote to local
+
+    scp remoteusername@192.168.1.1:/server/remote/folder/videos/*.mp4 scp /home/user/videos/
+
 add a user - add a new user
 
     sudo adduser khaldrogo
