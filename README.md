@@ -63,6 +63,10 @@ copy from remote to local
 
     scp remoteusername@192.168.1.1:/server/remote/folder/videos/*.mp4 scp /home/user/videos/
 
+download all files from an ftp server using the -r recursive option
+
+    wget -r ftp://#.#.#.#:3721/DCIM/Camera/
+
 add a user - add a new user
 
     sudo adduser khaldrogo
