@@ -3,6 +3,7 @@ bash-examples
 
 My notes on easy to forget bash 
 
+See also: <a href="http://worldoflinux.org/learn-linux.php">http://worldoflinux.org/learn-linux.php</a>
 
 Basics
 
