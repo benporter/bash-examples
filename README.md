@@ -131,6 +131,10 @@ Format a usb drive (assumed to be sdc) to FAT32.
 
     sudo mkfs.vfat -I -F 32 /dev/sdc
 
+Run the unetbootin app as root (fixes the blank gray screen issue)
+
+    sudo QT_X11_NO_MITSHM=1 /usr/bin/unetbootin
+
 Backup to AWS Glacier - assumes AWS CLI is install and "aws configure" has been run
 
     #tar and zip all of the files in the directory to backup
