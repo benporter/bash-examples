@@ -111,6 +111,18 @@ untar and unzip a file
 search for a file (dot searches from the current folder, recursively.  -iname rather than just -name makes it case insensitive)
 
     find . -iname "myfilename.txt"
+    
+Find “some text within a file” recursively
+
+    find "text within a file" . -R
+
+sed:  if the first character is X, then delete it.  This returns "yz"
+
+    echo "xyz" | sed 's/x//' 
+
+sed:  if the first character is X, then replace it with something  This returns "somethingyz"
+
+    echo "xyz" | sed 's/x/something/' 
 
 disk usage:  -h for human readable, and the next argument is the mount point to analyze
 
